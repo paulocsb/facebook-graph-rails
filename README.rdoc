@@ -1,9 +1,8 @@
 == README
-# Sample App Rails Facebook Graph API
 
 Sample Application Ruby on Rails using Facebook Graph API.
 
-# Installation
+== Installation
 
 execute:
 
