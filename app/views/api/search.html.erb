@@ -1,0 +1,16 @@
+<a class="btn btn-default" href="/" role="button">Nova Pesquisa</a>
+<h2>Results</h2>
+<div class="list-group">
+<% @graph.each do |data| %>
+	<a href="<%= data['link'] %>" class="list-group-item text-primary">
+		<h4 class="list-group-item-heading text-muted">
+			<span class="text-primary"><%= data['from']['name'] %></span>
+			<small>- <%= distance_of_time_in_words_or_absolute(data['created_time']) %></small>
+		</h4>
+
+		<p class="list-group-item-text">
+			<%= highlight(data['description'], @keyword) %>
+		</p>
+	</a>
+<% end %>
+</div>
