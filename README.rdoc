@@ -1,28 +1,25 @@
 == README
+# Sample App Rails Facebook Graph API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample Application Ruby on Rails using Facebook Graph API.
 
-Things you may want to cover:
+# Installation
 
-* Ruby version
+execute:
 
-* System dependencies
+``
+$ bundle
+``
 
-* Configuration
+visit the Facebook Graph API Explorer and Get Access Token. create file "config/facebook.yml":
 
-* Database creation
+``
+development:
+  access_token: <place_here_your_access_token>
+``
 
-* Database initialization
+run:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+``
+$ rails s
+``
