@@ -1,8 +1,8 @@
-== README
+# README
 
 Sample Application Ruby on Rails using Facebook Graph API.
 
-== Installation
+# Installation
 
 execute:
 
